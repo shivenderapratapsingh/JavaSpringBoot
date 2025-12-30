@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Pattern1/BetterCode/BetterCode.iml" filepath="$PROJECT_DIR$/Pattern1/BetterCode/BetterCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pattern1/BetterCodev2/BetterCodev2.iml" filepath="$PROJECT_DIR$/Pattern1/BetterCodev2/BetterCodev2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BuilderDesignPattern.iml" filepath="$PROJECT_DIR$/BuilderDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pattern1/Pattern1.iml" filepath="$PROJECT_DIR$/Pattern1/Pattern1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pattern1/ProblamaticCode/Practise/Practise.iml" filepath="$PROJECT_DIR$/Pattern1/ProblamaticCode/Practise/Practise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pattern1/ProblamaticCode/ProblamaticCode.iml" filepath="$PROJECT_DIR$/Pattern1/ProblamaticCode/ProblamaticCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pattern1/QueryGeneratePractise/QueryGeneratePractise.iml" filepath="$PROJECT_DIR$/Pattern1/QueryGeneratePractise/QueryGeneratePractise.iml" />
+    </modules>
+  </component>
+</project>
