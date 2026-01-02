@@ -1,0 +1,13 @@
+package com.example.RestApiTodoApp;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class RestApiTodoAppApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
