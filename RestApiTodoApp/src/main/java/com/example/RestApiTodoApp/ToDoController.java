@@ -15,10 +15,18 @@ public class ToDoController {
         todos.add(new Response(12L,false,"Goat",123));
         todos.add(new Response(23L,true,"Messi",987));
     }
+
     @GetMapping()
-    public ResponseEntity<ArrayList<Response>> getTodos(){
-        return  ResponseEntity.ok(todos);
+    public ResponseEntity<ArrayList<Response>> getTodo(@RequestParam(required = false) Boolean isCompleted ){
+        System.out.println("Incoming Query Params:" + isCompleted);
+        return ResponseEntity.ok(todos);
     }
+
+//    @GetMapping
+//    public ResponseEntity<ArrayList<Response>> getTodos(){
+//        return  ResponseEntity.ok(todos);
+//    }
+
 
 
     @PostMapping()
@@ -31,7 +39,7 @@ public class ToDoController {
     @GetMapping("/todos/{todoId}")
     public ResponseEntity<?> getTodoById(@PathVariable Long todoId){
         for(Response todo: todos){
-            if(todo.getId()==todoId){
+            if(todo.getId().equals(todoId)){
                 return ResponseEntity.ok(todo);
             }
         }
