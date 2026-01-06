@@ -1,5 +1,7 @@
 package com.example.RestApiTodoApp;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,8 +11,14 @@ import java.util.ArrayList;
 @RestController
 @RequestMapping("/api/v1/todos")
 public class ToDoController {
+
+
+    private TodoService todoService;
+    private TodoService todoService2;
     public static ArrayList<Response>  todos;
-    public  ToDoController(){
+    public  ToDoController( @Qualifier("AnotherTodoService")TodoService todoService,@Qualifier("AnotherTodoService") TodoService todoService2){
+        this.todoService=todoService;
+        this.todoService2=todoService2;
         todos=new ArrayList<>();
         todos.add(new Response(12L,false,"Goat",123));
         todos.add(new Response(23L,true,"Messi",987));
@@ -71,6 +79,8 @@ public class ToDoController {
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Data related to that id not Exsist in the List");
     }
+
+
 
 
 
